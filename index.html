@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <a href="index.html"><img class="logo" src="image/Mo's-Logo.png" alt="Mo's Restaurant Logo"></a>
+
+        <button class="hamburger" type="button" aria-label="Toggle navigation" aria-controls="site-menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav id="site-menu" class="hidden">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- hero section -->
+    <div class="hero">
+        <div class="hero-content">
+            <h1>Welcome to Mo's Restaurant</h1>
+            <p>Enjoy the best food in town!</p>
+            <a class="menu-btn" href="#menu">View Menu</a>
+        </div>
+        <img src="image/hero.png" id="Breakfast" alt="Hero Image">
+    </div>
+
+    <main>
+        <h2 class="main-title">Our Menu</h2>
+        <p class="main-des">Check out our delicious offerings!</p>
+        <section id="menu" class="breakfast">
+            <h2>Breakfast</h2>
+            <div class="swiper menu-swiper">
+                <div class="swiper-wrapper">
+                    <article class="swiper-slide menu-item">
+                        <img src="https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?auto=format&fit=crop&w=900&q=80" alt="Pancakes with berries">
+                        <h3>Berry Pancake Stack</h3>
+                        <p>Price: $12</p>
+                        <a href="#contact">Order Now</a>
+                    </article>
+                    <article class="swiper-slide menu-item">
+                        <img src="https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=900&q=80" alt="Avocado toast with poached eggs">
+                        <h3>Avocado Morning Toast</h3>
+                        <p>Price: $14</p>
+                        <a href="#contact">Order Now</a>
+                    </article>
+                    <article class="swiper-slide menu-item">
+                        <img src="https://images.unsplash.com/photo-1484723091739-30a097e8f929?auto=format&fit=crop&w=900&q=80" alt="French toast with fruit">
+                        <h3>French Toast Royale</h3>
+                        <p>Price: $13</p>
+                        <a href="#contact">Order Now</a>
+                    </article>
+                </div>
+            </div>
+        </section>   
+
+        <section class="lunch">
+            <h2>Lunch</h2>
+            <div class="swiper menu-swiper">
+                <div class="swiper-wrapper">
+                    <article class="swiper-slide menu-item">
+                        <img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=900&q=80" alt="Fresh grain bowl with vegetables">
+                        <h3>Garden Grain Bowl</h3>
+                        <p>Price: $16</p>
+                        <a href="#contact">Order Now</a>
+                    </article>
+                    <article class="swiper-slide menu-item">
+                        <img src="https://images.unsplash.com/photo-1550507992-eb63ffee0847?auto=format&fit=crop&w=900&q=80" alt="Grilled sandwich with salad">
+                        <h3>Grilled Market Melt</h3>
+                        <p>Price: $15</p>
+                        <a href="#contact">Order Now</a>
+                    </article>
+                    <article class="swiper-slide menu-item">
+                        <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=900&q=80" alt="Colorful lunch salad">
+                        <h3>Mo's Harvest Salad</h3>
+                        <p>Price: $17</p>
+                        <a href="#contact">Order Now</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <h2>About Mo's</h2>
+            <p>Good food, easy mornings, and generous lunches made fresh for our neighborhood.</p>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Contact Us</h2>
+            <form>
+                <label for="name">Name</label>
+                <input id="name" name="name" type="text" required>
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" required>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Mo's. All rights reserved.</p>
+        <div class="socials">
+            <h3 class="social-title">Socials:</h3>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-whatsapp"></i>
+            <i class="fa-brands fa-twitter"></i>
+        </div>
+        <div class="contact-info">
+            <h3 class="contact-title">Contact:</h3>
+            <p class="cd">Phone: <a href="tel:555-555-5555">555-555-5555</a></p>
+            <p>Email: <a href="mailto:info@moss.com">info@moss.com</a></p>
+        </div>
+        <div class="location">
+            <h3 class="location-title">Location:</h3>
+            <p><a href="">123 Main Street, City, Country</a></p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
